@@ -1,0 +1,1 @@
+website that caculate your attendance and help you to maintain the atteandance of uni so you can't be debar because of the atteandance.Made with js and html do check this and commit changes if you want any 
