@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Primary Meta Tags -->
+    <title>Attendance Calculator | Track & Plan Your Attendance</title>
+    <meta name="title" content="Attendance Calculator | Track & Plan Your Attendance">
+    <meta name="description" content="Free online attendance calculator to track your current attendance percentage, calculate required classes, and plan your attendance goals. Perfect for students!">
+    <meta name="keywords" content="attendance calculator, attendance tracker, class attendance, college attendance, school attendance, attendance percentage calculator, attendance management, bunking calculator, attendance planner">
+    <meta name="author" content="Exxtraa">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-website-url.com/">
+    <meta property="og:title" content="Attendance Calculator | Track & Plan Your Attendance">
+    <meta property="og:description" content="Free online attendance calculator to track your current attendance percentage, calculate required classes, and plan your attendance goals. Perfect for students!">
+    <meta property="og:image" content="path-to-your-preview-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://your-website-url.com/">
+    <meta property="twitter:title" content="Attendance Calculator | Track & Plan Your Attendance">
+    <meta property="twitter:description" content="Free online attendance calculator to track your current attendance percentage, calculate required classes, and plan your attendance goals. Perfect for students!">
+    <meta property="twitter:image" content="path-to-your-preview-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1a73e8">
+    
+    <!-- IE compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Prevent automatic phone number linking -->
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preconnect to improve performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Cache control -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Calculator</h1>
+        <div class="target-section">
+            <h2>Target Attendance Calculator</h2>
+            <div class="target-buttons">
+                <button onclick="calculateRequired(75)">75%</button>
+                <button onclick="calculateRequired(80)">80%</button>
+                <button onclick="calculateRequired(85)">85%</button>
+                <button onclick="calculateRequired(90)">90%</button>
+                <button onclick="calculateRequired(95)">95%</button>
+            </div>
+        </div>
+        <div class="input-section">
+            <div class="input-group">
+                <label for="totalClasses">Total Classes:</label>
+                <input type="number" id="totalClasses" min="1">
+            </div>
+            <div class="input-group">
+                <label for="presentClasses">Classes Attended:</label>
+                <input type="number" id="presentClasses" min="0">
+            </div>
+        </div>
+        <div class="result-section">
+            <h2>Current Attendance</h2>
+            <div id="currentAttendance" class="attendance-display">0%</div>
+            <div id="requiredClasses" class="required-display"></div>
+        </div>
+    </div>
+    <a href="https://github.com/Exxtraa" target="_blank" class="github-button">GitHub ↗</a>
+    <script src="script.js"></script>
+</body>
+</html>
